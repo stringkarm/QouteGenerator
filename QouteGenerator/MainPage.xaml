@@ -1,16 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="QouteGenerator.MainPage">
+             x:Class="QouteGenerator.MainPage"
+             Title="Quote Generator">
 
-    <Grid>
-        <Label x:Name="lblQuote"              
-               Text="Sample"
-               FontFamily="SensationsandQualities"/>
+    <!-- PARA GRADIENT NI DAPITA -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#3a1c41" Offset="0.0" />
+            <GradientStop Color="#1a2a3c" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
 
-        <Button 
-            Text="Generate Quotes"
-            x:Name="btnGenerate"
-            Clicked="btnGenerate_Clicked"/>
+    <Grid RowSpacing="40"
+          Padding="30"
+          VerticalOptions="Center"
+          HorizontalOptions="Center">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label 
+                   Text="Qoute of the Day"
+                   FontSize="30"
+                   FontFamily="TimesNewRoman"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   LineHeight="1.5"/>   
+        </HorizontalStackLayout>
+
+        <Frame Grid.Row="1"
+               CornerRadius="20"
+               BorderColor="White"
+               Padding="25"
+               HasShadow="True"
+               BackgroundColor="Transparent"
+               Opacity="0.95">
+
+            <Label x:Name="lblQuote"
+                   Text="Click the button to generate a quote."
+                   FontSize="18"
+                   FontFamily="Morgan"
+                   TextColor="WHITE"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   LineHeight="1.5"/>
+        </Frame>
+
+        <Button Grid.Row="2"
+                Text="Generate Quote"
+                x:Name="btnGenerate"
+                Clicked="btnGenerate_Clicked"
+                 FontSize="16"
+                CornerRadius="25"
+                BackgroundColor="#1a2a6c"
+                TextColor="White"
+                HeightRequest="55"
+                WidthRequest="300"
+                HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>

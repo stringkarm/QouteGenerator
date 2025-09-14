@@ -4,6 +4,7 @@ namespace QouteGenerator
 {
     public static class MauiProgram
     {
+
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
@@ -13,8 +14,7 @@ namespace QouteGenerator
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                    fonts.AddFont("Sensations and Qualities.ttf", "SensationsandQualities");
-                    fonts.AddFont("fontello.ttf", "qouteicon");
+                    fonts.AddFont("morgan.ttf", "Morgan");
                 });
 
 #if DEBUG
