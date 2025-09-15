@@ -23,8 +23,18 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <HorizontalStackLayout HorizontalOptions="Center">
+        <VerticalStackLayout HorizontalOptions="Center">
+
+            <!--<Image>
+                <Image.Source>
+                    <FontImageSource FontFamily="icon"
+                                     Glyph="&#xF10E;"/>
+
+                </Image.Source>
+            </Image>-->
+
             <Label 
+                
                    Text="Qoute of the Day"
                    FontSize="30"
                    FontFamily="TimesNewRoman"
@@ -32,7 +42,7 @@
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    LineHeight="1.5"/>   
-        </HorizontalStackLayout>
+        </VerticalStackLayout>
 
         <Frame Grid.Row="1"
                CornerRadius="20"
@@ -42,9 +52,10 @@
                BackgroundColor="Transparent"
                Opacity="0.95">
 
+
             <Label x:Name="lblQuote"
                    Text="Click the button to generate a quote."
-                   FontSize="18"
+                   FontSize="20"
                    FontFamily="Morgan"
                    TextColor="WHITE"
                    HorizontalTextAlignment="Center"
@@ -56,12 +67,12 @@
                 Text="Generate Quote"
                 x:Name="btnGenerate"
                 Clicked="btnGenerate_Clicked"
-                 FontSize="16"
+                FontSize="16"
                 CornerRadius="25"
                 BackgroundColor="#1a2a6c"
                 TextColor="White"
                 HeightRequest="55"
-                WidthRequest="300"
+                WidthRequest="350"
                 HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>

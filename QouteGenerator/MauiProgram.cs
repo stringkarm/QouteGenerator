@@ -15,6 +15,7 @@ namespace QouteGenerator
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("morgan.ttf", "Morgan");
+                    fonts.AddFont("icon.ttf", "icon");
                 });
 
 #if DEBUG
