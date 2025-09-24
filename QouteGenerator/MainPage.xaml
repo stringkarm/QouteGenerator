@@ -23,20 +23,20 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <VerticalStackLayout HorizontalOptions="Center">
+        <VerticalStackLayout HorizontalOptions="Center" Spacing="20">
 
-            <!--<Image>
+            <Image WidthRequest="50"  HeightRequest="50">
                 <Image.Source>
                     <FontImageSource FontFamily="icon"
-                                     Glyph="&#xF10E;"/>
-
+                                     Glyph="&#xF10E;"
+                                     Size="50"/>
                 </Image.Source>
-            </Image>-->
-
+            </Image>
+            
             <Label 
                 
-                   Text="Qoute of the Day"
-                   FontSize="30"
+                   Text="Quote of the Day"
+                   FontSize="40"
                    FontFamily="TimesNewRoman"
                    TextColor="White"
                    HorizontalTextAlignment="Center"
